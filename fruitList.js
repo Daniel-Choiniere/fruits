@@ -9,16 +9,14 @@ var fruits = [ "Pomme", "Apple", "apricot_small", "Apricots", "avocado_small", "
 
 
 for (let i = 0; i < fruits.length; i++) {
-    
-    console.log("Fruit # ", i + 1, "is", fruits[i]);
-}
-
-
-for (let i = 0; i < fruits.length; i++) {
-    let lastChar = fruits[i].slice(6);
-    if (lastChar === "_small") {
-        console.log(fruits[i].slice(0, 6))
+    if (fruits[i].indexOf("_") == -1) {
+        console.log(fruits[i]);
     }
 }
-
-
+    
+// for (let i = 0; i < fruits.length; i++) {
+//   if (fruits[i].includes("_")) {
+//       fruits.splice(i, 1)
+//   }
+// }
+// console.log(fruits)
